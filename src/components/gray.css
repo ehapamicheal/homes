@@ -27,7 +27,7 @@
 /* media styles goes here */
 @media (max-width: 425px) {
     .gray_container {
-        margin-bottom: 5rem;
+        margin-bottom: 4rem;
     }
 
     .gray_container .gray_main {
@@ -38,5 +38,13 @@
     .gray_main .gray_right {
         border-radius: var(--border-radius-1);
         height: 100px;
+    }
+}
+
+
+
+@media (max-width: 320px) {
+    .gray_container {
+        margin-bottom: 3.5rem;
     }
 }
