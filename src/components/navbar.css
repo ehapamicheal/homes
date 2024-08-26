@@ -1,0 +1,48 @@
+.navbar_container {
+    top: 0;
+    left: 0;
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    border-bottom: 1px solid var(--yellow-color);
+    background: var(--white-color);
+}
+
+.navbar_container .navbar_main {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.navbar_main .navbar_left .logo_link {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 1rem;
+    text-decoration: none;
+}
+
+.navbar_left .logo_link img {
+    width: 30px;
+}
+
+.navbar_left .logo_link h3 {
+    color: var(--light-dark);
+    font-size: 1.4rem;
+    font-family: "Nunito", sans-serif;
+    margin-top: 1rem;
+}
+
+
+
+
+/* media styles goes here */
+@media (max-width: 425px) {
+    .navbar_container .navbar_main {
+        padding: 2rem 1.2rem 1rem;
+    }
+}

@@ -1,0 +1,35 @@
+.claim_container {
+    margin-top: 2.5rem;
+}
+
+.claim_container .claim_main {
+    background: var(--light-gray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    border-radius: var( --border-radius-1);
+}
+
+.claim_container .claim_main h1 {
+    color: var(--gray-color);
+    font-size: 2.2rem;
+    font-family: "Nunito", sans-serif;
+    font-weight: 500;
+}
+
+/* media styles goes here */
+@media (max-width: 425px) {
+    .claim_container {
+        margin-top: 1.3rem;
+    }
+
+    .claim_container .claim_main {
+        height: 150px;
+        border-radius: var( --border-radius-1);
+    }
+    
+    .claim_container .claim_main h1 {
+        font-size: 1.5rem;
+    }
+}

@@ -1,0 +1,42 @@
+.gray_container {
+    width: 100%;
+    margin-bottom: 6rem;
+    padding-bottom: 4rem;
+}
+
+.gray_container .gray_main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.9rem;
+}
+
+.gray_main .gray_left,
+.gray_main .gray_right {
+    background: var(--gray-color);
+    border-radius: var(--border-radius-2);
+    height: 300px;
+    transition: var(--transition-5s);
+}
+
+.gray_main .gray_left:hover,
+.gray_main .gray_right:hover {
+    transform: scale(1.05);
+    background: var(--yellow-color);
+}
+
+/* media styles goes here */
+@media (max-width: 425px) {
+    .gray_container {
+        margin-bottom: 5rem;
+    }
+
+    .gray_container .gray_main {
+        gap: 1rem;
+    }
+
+    .gray_main .gray_left,
+    .gray_main .gray_right {
+        border-radius: var(--border-radius-1);
+        height: 100px;
+    }
+}
